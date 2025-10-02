@@ -5,7 +5,7 @@ class CustomSearchIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       height: 46,
       width: 46,
       alignment: Alignment.center,
@@ -13,7 +13,7 @@ class CustomSearchIcon extends StatelessWidget {
         color: Color.fromARGB(74, 59, 59, 59),
         borderRadius: BorderRadius.circular(16),
       ),
-      child: const Icon(Icons.search,size: 28,color: Colors.white,),
+      child: const Icon(Icons.search, size: 28, color: Colors.white),
     );
   }
 }

@@ -6,9 +6,6 @@ class NotesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: const NotesViewBody(),
-    );
+    return Scaffold(body: const NotesViewBody());
   }
 }
-
