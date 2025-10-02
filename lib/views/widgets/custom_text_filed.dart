@@ -18,8 +18,8 @@ class CustomTextFiled extends StatelessWidget {
         focusedBorder: buildBorder(kPrimaryColor),
         hintText: hint,
         hintStyle: TextStyle(
-          color: kPrimaryColor,
-          fontSize: 26,
+          color: Color(0xffA3A3A3),
+          fontSize: 20,
           fontWeight: FontWeight.w500,
         ),
       ),
