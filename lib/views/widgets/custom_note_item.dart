@@ -7,7 +7,7 @@ class NoteItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(left: 16, top: 24, bottom: 24, right: 0),
-      margin: EdgeInsets.only(bottom: 16),
+      margin: EdgeInsets.symmetric(vertical: 4),
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 241, 190, 114),
         borderRadius: BorderRadius.circular(16),
@@ -30,7 +30,7 @@ class NoteItem extends StatelessWidget {
                 'Build your career with Mostafa Alabraqi.',
                 style: TextStyle(
                   color: const Color.fromARGB(139, 0, 0, 0),
-                  fontSize: 20,
+                  fontSize: 18,
                 ),
               ),
             ),
