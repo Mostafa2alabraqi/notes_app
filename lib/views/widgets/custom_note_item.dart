@@ -15,14 +15,14 @@ class NoteItem extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) {
-              return EditNoteView();
+              return EditNoteView(note: note,);
             },
           ),
         );
       },
       child: Container(
-        padding: EdgeInsets.only(left: 16, top: 24, bottom: 24, right: 0),
-        margin: EdgeInsets.symmetric(vertical: 4),
+        padding:const EdgeInsets.only(left: 16, top: 24, bottom: 24, right: 0),
+        margin:const EdgeInsets.symmetric(vertical: 4),
         decoration: BoxDecoration(
           color: Color(note.color),
           borderRadius: BorderRadius.circular(16),
@@ -33,7 +33,7 @@ class NoteItem extends StatelessWidget {
             ListTile(
               title: Text(
                 note.title,
-                style: TextStyle(
+                style:const TextStyle(
                   color: Colors.black,
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
@@ -43,8 +43,8 @@ class NoteItem extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 16, bottom: 16),
                 child: Text(
                   note.content,
-                  style: TextStyle(
-                    color: const Color.fromARGB(139, 0, 0, 0),
+                  style:const TextStyle(
+                    color:Color.fromARGB(139, 0, 0, 0),
                     fontSize: 18,
                   ),
                 ),
@@ -53,16 +53,16 @@ class NoteItem extends StatelessWidget {
                 onPressed: () {
                   note.delete();
                 },
-                icon: Icon(Icons.delete, color: Colors.black, size: 30),
+                icon:const Icon(Icons.delete, color: Colors.black, size: 30),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 24),
               child: Text(
                 note.date.toString(),
-                style: TextStyle(
+                style:const TextStyle(
                   fontSize: 16,
-                  color: const Color.fromARGB(139, 0, 0, 0),
+                  color:Color.fromARGB(139, 0, 0, 0),
                 ),
               ),
             ),
